@@ -54,4 +54,4 @@ For example to test in Mac OS X command line:
 
     export WIRECARD_EMAIL=me@bemmu.com
     export WIRECARD_EMAIL_PASSWORD=foobar
-    python iterate_all_wirecard_invoices.py
+    python iterators/iterate_all_wirecard_invoices.py
