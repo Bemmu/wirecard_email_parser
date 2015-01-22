@@ -6,7 +6,7 @@ information? You would have to go through all emails and attached PDFs and manua
 data entry to extract all that data.
 
 Another option would be to write some software to go through those emails, download each
-attached PDF and then parse them. That is the aim of the scripts here. 
+attached PDF and then parse them. That is the aim of the scripts here.
 
 ## Supported messages
 
@@ -19,11 +19,14 @@ Each invoice is a set of credit card transactions that WireCard processed for yo
 settlement note / balance note describes a remittance of money to your bank account and
 it is comprised of several invoices bundled together.
 
+## Assumptions made
+
 I wrote this purely for my own use, so there is **no guarantee that it will work for you**.
 In particular I assumed that credit cards are charged in USD but remittances are made in EUR.
 If this is not the case the parser will most likely break.
 
 Another assumption is that in a settlement note your Business Case must include the word "WDB".
+The Python version I used was 2.7.8.
 
 ## Structure
 
