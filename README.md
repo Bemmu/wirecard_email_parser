@@ -8,6 +8,8 @@ data entry to extract all that data.
 Another option would be to write some software to go through those emails, download each
 attached PDF and then parse them. That is the aim of the scripts here.
 
+![parsed pdf](https://github.com/Bemmu/wirecard_email_parser/raw/master/screenshot.png)
+
 ## Supported messages
 
 Currently two types of messages are supported:
