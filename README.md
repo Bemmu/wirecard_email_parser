@@ -28,5 +28,7 @@ Another assumption is that in a settlement note your Business Case must include 
 ## Structure
 
 The parsers directory contains scripts that can extract fields from WireCard PDFs that
-have first been turned into text using pdf2txt with default settings.
+have first been turned into text files.
 
+[Pdfminer](http://www.unixuser.org/~euske/python/pdfminer/) is a project by Yusuke Shinyama. It turns PDFs into text files. It has a lot of options, but here only the default PDF -> TEXT conversion is used. To make things easier, I embedded the whole project
+(also MIT licensed) here. I added read_pdf.py, a simplified function for using pdfminer to do the default conversion.
