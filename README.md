@@ -1,7 +1,5 @@
 # WireCard email parser
 
-## What is WireCard and what are these scripts for?
-
 WireCard is a payment gateway. Periodically they send you important email concerning money that
 has been processed through them. What if later on you find a need to do something with that
 information? You would have to go through all emails and attached PDFs and manually do
