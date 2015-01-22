@@ -37,3 +37,17 @@ have first been turned into text files.
 
 [Pdfminer](http://www.unixuser.org/~euske/python/pdfminer/) is a project by Yusuke Shinyama. It turns PDFs into text files. It has a lot of options, but here only the default PDF -> TEXT conversion is used. To make things easier, I embedded the whole project
 (also MIT licensed) here. I added read_pdf.py, a simplified function for using pdfminer to do the default conversion.
+
+## Email access
+
+In order to find messages from WireCard and download the attached PDFs, email access
+is needed. The scripts browse your email over imap. I have only tested this with gmail.
+The code will look for messages from noreply@wirecard.com and invoice@wirecard.com and
+download the attached PDFs. Set your email address and password in the environment
+variables wirecard_email and wirecard_email_password.
+
+For example to test in Mac OS X command line:
+
+    export WIRECARD_EMAIL=me@bemmu.com
+    export WIRECARD_EMAIL_PASSWORD=foobar
+    python iterate_all_wirecard_invoices.py
