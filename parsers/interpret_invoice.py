@@ -75,42 +75,6 @@ def interpret_invoice(txt):
 
 	return out
 
-# def interpret_invoice(txt):
-
-# 	l = txt.splitlines()
-# 	out = {}
-
-# 	# After the line "Invoice" there are some keys and then their values.
-# 	# Then there is yet another similar group of key-value pairs.
-# 	i = l.index("Invoice") + 2
-
-# 	def kv():
-# 		keys = [x.replace(":", "") for x in l[i:l.index("", i)]]
-# 		values_begin = i + 1 + len(keys)
-# 		values = l[values_begin:values_begin + len(keys)]
-# 		out.update(zip(keys, values))
-# 		return values_begin + len(keys) + 1
-
-# 	i = kv()
-# 	kv()
-
-# 	# 
-# 	pattern = "for the billing period %s the following transactions were cleared on your behalf."
-# 	i = l.index(pattern % out['Billing period'])
-
-# 	#
-
-# 	print out
-
-# #	kv()
-
-# #	print out
-
-# 	# After the line mentioning "the following transactions", 
-# 	#the following transactions
-
-# 	pass
-
 txt = """Wirecard Bank AG | Einsteinring 35 | D-85609 Aschheim, Germany
 
 TMI Bemmu
@@ -798,4 +762,3 @@ Bank Details: Commerzbank Munich | Account 512 480 503 | Sort Code 700 400 41 | 
 
 if __name__ == "__main__":
 	print interpret_invoice(txt3)
-#print interpret_invoice(txt)
