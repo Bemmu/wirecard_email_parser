@@ -23,6 +23,8 @@ I wrote this purely for my own use, so there is **no guarantee that it will work
 In particular I assumed that credit cards are charged in USD but remittances are made in EUR.
 If this is not the case the parser will most likely break.
 
+Another assumption is that in a settlement note your Business Case must include the word "WDB".
+
 ## Structure
 
 The parsers directory contains scripts that can extract fields from WireCard PDFs that
