@@ -1,5 +1,5 @@
-!/invoices
-!/settlements
+!/invoices/
+!/settlements/
 /invoices/*
 /settlements/*
 
