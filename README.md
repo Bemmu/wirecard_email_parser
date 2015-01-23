@@ -10,6 +10,19 @@ attached PDF and then parse them. That is the aim of the scripts here.
 
 ![parsed pdf](https://github.com/Bemmu/wirecard_email_parser/raw/master/screenshot.png)
 
+## Usage
+
+Put all the files in a directory. Then from command line:
+
+    export WIRECARD_EMAIL=someone@example.com
+    export WIRECARD_EMAIL_PASSWORD=yourpassword
+    python wirecard_invoices_json.py > invoices.json
+    python wirecard_settlement_notes_json.py > settlements.json
+
+Now if everything worked, you should have all of your invoices in the invoices directory
+and all of your settlements in the settlements directory. In addition you'll have invoices.json
+which has all the invoices in JSON-format and similarly for settlements.json.
+
 ## Supported messages
 
 Currently two types of messages are supported:
@@ -50,8 +63,3 @@ The code will look for messages from noreply@wirecard.com and invoice@wirecard.c
 download the attached PDFs. Set your email address and password in the environment
 variables wirecard_email and wirecard_email_password.
 
-For example to test in Mac OS X command line:
-
-    export WIRECARD_EMAIL=me@bemmu.com
-    export WIRECARD_EMAIL_PASSWORD=foobar
-    python iterators/iterate_all_wirecard_invoices.py
