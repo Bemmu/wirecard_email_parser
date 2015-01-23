@@ -2,4 +2,4 @@
 /settlements/*
 !/invoices/readme.txt
 !/settlements/readme.txt
-
+*.pyc
