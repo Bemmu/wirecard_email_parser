@@ -52,8 +52,10 @@ Iterators has functions that know how to access your email account to find email
 attachments from wirecard. There is one iterator that can go through settlement / balance
 notes and another one for invoices.
 
-[Pdfminer](http://www.unixuser.org/~euske/python/pdfminer/) is a project by Yusuke Shinyama. It turns PDFs into text files. It has a lot of options, but here only the default PDF -> TEXT conversion is used. To make things easier, I embedded the whole project
+[Pdfminer](http://www.unixuser.org/~euske/python/pdfminer/) is a project by Yusuke Shinyama. It turns PDFs into text files. It has a lot of options, but here only the default PDF -> text conversion is used. To make things easier, I embedded the whole project
 (also MIT licensed) here. I added read_pdf.py, a simplified function for using pdfminer to do the default conversion.
+
+Settlements and invoices are empty directories where PDFs and text versions get saved.
 
 ## Email access
 
