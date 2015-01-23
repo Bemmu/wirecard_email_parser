@@ -2,8 +2,8 @@
 # Extract important fields from attachments and output as JSON.
 
 import read_pdf
-import iterate_all_wirecard_invoices
-import interpret_invoice
+from iterators import iterate_all_wirecard_invoices
+from parsers import interpret_invoice
 import json
 
 invoices = []

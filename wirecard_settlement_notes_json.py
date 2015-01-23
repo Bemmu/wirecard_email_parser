@@ -1,10 +1,10 @@
 # Go through gmail looking for wirecard settlement / balance notes and turn them
 # into a JSON structure. Also save all source PDF attachments.
 
-import iterate_all_wirecard_settlements
+from iterators import iterate_all_wirecard_settlements
 import read_pdf
-import interpret_balance_note
-import interpret_settlement_note
+from parsers import interpret_balance_note
+from parsers import interpret_settlement_note
 import json
 
 notes = []
