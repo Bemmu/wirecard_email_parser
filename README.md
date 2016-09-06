@@ -23,6 +23,8 @@ Now if everything worked, you should have all of your invoices in the invoices d
 and all of your settlements in the settlements directory. In addition you'll have invoices.json
 which has all the invoices in JSON-format and similarly for settlements.json.
 
+After you attempt to use the app, you may encounter an error such as "[ALERT] Please log in via your web browser". This can happen if gmail determines that the access looked suspicious. In that case go check your email, you should have a message from Google with an "allow" button inside of it.
+
 ## Supported messages
 
 Currently two types of messages are supported:
